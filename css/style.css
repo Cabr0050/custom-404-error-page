@@ -1,0 +1,205 @@
+/*Colours 
+#291D6B - Midnight Blue
+#9788EE - Medium Purple
+#583FEB - Majorelle Blue
+#443D6B - Cyber Grape
+#4632B8 - Ocean Blue 
+*/
+
+/* Website Home Page  */
+
+/* Header  */
+header{
+    margin: 0; 
+    padding: 2rem;
+    background-color: #291D6B;
+}
+
+header h1 {
+    color: #FFFF;
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding-left: 0; 
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
+    text-align: center;
+}
+
+header nav ul li a {
+    padding: 0.5rem 1.5rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold; 
+    color: #FFFF;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+header nav ul li {
+    margin: 1.5rem 0rem; 
+    display: inline-block;
+}
+
+.home {
+    font-family: 'Tangerine', cursive;
+    font-size: 4rem;
+}
+
+img, object {
+    max-width: 100%;
+    max-height:100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* Main Content  */
+
+.welcome {
+    font-family: 'Tangerine', cursive;
+    font-size: 3rem;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #291D6B;
+    background-color: #9788EE;
+    font-size: 1.5rem;
+    margin: 0; 
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.cake {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem; 
+}
+
+.cake img {
+    width: 100%;
+    width: 450px;
+}
+
+main{
+    margin: 0 1rem; 
+}
+
+/* Footer  */
+footer{
+    background-color:  #291D6B;
+    font-size: 1rem;
+    color: #ffff;
+    padding: 2rem;
+}
+
+footer p{
+   color: #FFF; 
+   text-align: center;
+   margin: 0;
+}
+
+footer a{
+    color: #FFF; 
+    text-align: left;
+}
+
+/* Error Page  */
+.erorr{
+    color: #291D6B;
+    text-align: center;
+    text-decoration: underline;
+    font-family: 'Yeseva One', Georgia, 'Times New Roman', Times, cursive; 
+    margin-top: 0;
+}
+
+.error-page {
+    display: grid;
+    margin: 3rem 1.5rem; 
+    justify-content: center;
+    grid-gap: 2rem 5rem; 
+}
+
+span {
+    font-weight: bold;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-height: 500px;
+    max-width: 500px;
+}
+
+a {
+    color: #4632B8;
+}
+
+.title {
+    color: #291D6B;
+    text-align: center;
+    font-family: 'Yeseva One', Georgia, 'Times New Roman', Times, cursive; 
+}
+
+.message {
+    border: 5px solid #291D6B;
+    max-width: 40rem; 
+    margin: 2rem auto; 
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1rem; 
+}
+
+/* Media Queries  */
+@media only screen and (min-width: 1150px) and (max-width: 1920px){
+
+    p {
+        font-size: 1.5rem;
+    }
+    .home {
+        font-size: 5rem;
+    }
+    
+    .welcome {
+        font-size: 4rem;
+    }
+
+    .center {
+        height: 530px;
+        width: 530px;
+    }
+
+    .cake {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .erorr-page {
+        margin: 3rem 1rem; 
+        grid-template-columns: 2fr 2fr;
+        grid-template-rows: 2fr 2fr;
+        justify-content: center;
+        grid-gap: 0 10rem; 
+    }
+
+    .erorr {
+        grid-column: 1/3;
+        font-size: 4rem;
+    }
+}
